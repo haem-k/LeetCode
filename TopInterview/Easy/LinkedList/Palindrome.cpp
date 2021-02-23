@@ -17,10 +17,6 @@ public:
     }
     
     ListNode* checkOneNumber(ListNode* front, ListNode *current){
-        // if current node is nullptr
-        if(current == nullptr)
-            return nullptr;
-        
         // if currect node is the last one in the list
         if(current->next == nullptr){
             if(front->val != current->val)
